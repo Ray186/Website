@@ -1,0 +1,92 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: "Urbanist", sans-serif;
+  background-color: #F9F5FF;
+}
+
+* {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #28262C;
+  padding: 20px 30px;
+  color: white;
+}
+
+.navbar .title a{
+  background-color: transparent; 
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar .buttons {
+  display: flex;
+  margin-left: auto;
+  gap: 15px;
+}
+
+.navbar .buttons a {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  padding: 3px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.gallery {
+  background-color: #7389AE; 
+}
+
+.photos {
+  background-color: #779BE7;
+}
+
+.booking {
+  background-color: #79C99E; 
+}
+
+.about {
+  background-color: #7389AE; 
+}
+
+.gallery:hover {
+  background-color: #6A7C9E; 
+}
+
+.photos:hover {
+  background-color: #5A8BD6; 
+}
+
+.booking:hover {
+  background-color: #66B58C; 
+}
+
+.about:hover {
+  background-color: #6A7C9E;
+}
+.content {
+  padding: 50px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.content img {
+ margin-top:30px;
+}
+.content h1{
+  font-weight: bold;
+  margin: 0;
+}
+
+.content p{
+  font-weight: 500;
+  margin: 0;
+}
