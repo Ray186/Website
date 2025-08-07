@@ -15,21 +15,20 @@ body {
   display: flex;
   align-items: center;
   background-color: #28262C;
-  padding: 20px 30px;
+  padding: 10px 20px;
   color: white;
 }
 
-.navbar .title a{
-  background-color: transparent; 
-  color: white;
-  font-size: 1.8rem;
-  font-weight: bold;
+.navbar .logo img{
+  margin:0;
+  padding:0;
+  display: block
 }
 
 .navbar .buttons {
   display: flex;
   margin-left: auto;
-  gap: 15px;
+  gap: 20px;
 }
 
 .navbar .buttons a {
@@ -39,7 +38,7 @@ body {
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .gallery {
@@ -79,7 +78,8 @@ body {
   font-size: 1.2rem;
 }
 .content img {
- margin-top:30px;
+  margin-top:30px;
+  width:50%;
 }
 .content h1{
   font-weight: bold;
