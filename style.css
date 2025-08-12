@@ -31,7 +31,7 @@ body {
   gap: 20px;
 }
 
-.navbar .buttons a {
+.buttons a {
   font-family: "Urbanist", sans-serif;
   font-weight: 600;
   padding: 3px 20px;
@@ -45,11 +45,11 @@ body {
   background-color: #7389AE; 
 }
 
-.photos {
+.photos, .events {
   background-color: #779BE7;
 }
 
-.booking {
+.booking, .sports {
   background-color: #79C99E; 
 }
 
@@ -61,11 +61,11 @@ body {
   background-color: #6A7C9E; 
 }
 
-.photos:hover {
+.photos:hover, .events:hover {
   background-color: #5A8BD6; 
 }
 
-.booking:hover {
+.booking:hover, .sports:hover {
   background-color: #66B58C; 
 }
 
@@ -75,13 +75,28 @@ body {
 .content {
   padding: 50px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 .content img {
   margin-top:30px;
   width:50%;
 }
+
+.content .buttons a{
+  font-family: "Urbanist", sans-serif;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size:3rem;
+}
+.content .buttons {
+  display: flex;
+  justify-content:center;
+  gap:30px;
+}
+
+
 .content h1{
+  font-size:4rem;
   font-weight: bold;
   margin: 0;
 }
@@ -89,4 +104,22 @@ body {
 .content p{
   font-weight: 500;
   margin: 0;
+}
+.aboutText{
+  margin-top:60px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; 
+}
+#pictures {
+  column-count: 4;
+  column-gap: 5px;
+}
+#pictures img {
+  width: 100%;
+  margin: 3px;
 }
