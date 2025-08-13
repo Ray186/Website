@@ -252,3 +252,20 @@ body {
   background: white;
   font-weight: bold;
 }
+
+/*GOOGLE FORM FORMAT */
+.form-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 120%; /* Adjust ratio to form height */
+  height: 0;
+}
+
+.form-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
