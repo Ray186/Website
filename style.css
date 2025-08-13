@@ -7,6 +7,7 @@ body {
   background-color: #F9F5FF;
 }
 
+
 * {
   margin: 0;
 }
@@ -94,17 +95,31 @@ body {
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* stack logo above buttons */
+    flex-direction: column;
     align-items: center;
   }
-  .navbar .logo {
-    text-align: center; /* center logo */
-    margin-bottom: 10px; /* space between logo and buttons */
-  }
+
   .navbar .buttons {
-    flex-wrap: wrap;   /* buttons wrap if too wide */
-    justify-content: center; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
+
+  .buttons a {
+    padding: 5px 10px;  /* reduce horizontal padding */
+    font-size: 1.4rem;  /* reduce font-size */
+  }
+
+  .navbar .logo {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+/* Content images responsive */
+.content img {
+  max-width: 100%;
+  height: auto;
 }
 
 .content .buttons a{
