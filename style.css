@@ -90,9 +90,10 @@ body {
   font-size:3rem;
 }
 .content .buttons {
+  margin-top: 10px;
   display: flex;
   justify-content:center;
-  gap:30px;
+  gap:60px;
 }
 
 
@@ -133,7 +134,6 @@ body {
   border: none;
   margin-bottom: 5px; /* optional spacing */
 }
-
 
 
 /* Hide lightbox by default */
