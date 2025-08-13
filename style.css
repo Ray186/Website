@@ -32,6 +32,7 @@ body {
 }
 
 .buttons a {
+  text-decoration: none !important;
   font-family: "Urbanist", sans-serif;
   font-weight: 600;
   padding: 3px 20px;
@@ -121,5 +122,50 @@ body {
 }
 #pictures img {
   width: 100%;
-  margin: 3px;
+  margin: 0px;
+}
+#pictures .card-img-top {
+  border-radius: 3px;
+}
+
+#pictures .card {
+  box-shadow: none;
+  border: none;
+  margin-bottom: 5px; /* optional spacing */
+}
+
+
+
+/* Hide lightbox by default */
+#lightbox.hidden {
+  display: none;
+}
+
+/* Fullscreen overlay */
+#lightbox {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px black;
+}
+
+/* Close button */
+#close {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
 }
