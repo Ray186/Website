@@ -92,6 +92,21 @@ body {
   transform: translateY(0);
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* stack logo above buttons */
+    align-items: center;
+  }
+  .navbar .logo {
+    text-align: center; /* center logo */
+    margin-bottom: 10px; /* space between logo and buttons */
+  }
+  .navbar .buttons {
+    flex-wrap: wrap;   /* buttons wrap if too wide */
+    justify-content: center; 
+  }
+}
+
 .content .buttons a{
   font-family: "Urbanist", sans-serif;
   padding: 8px 20px;
