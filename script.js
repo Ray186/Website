@@ -1,3 +1,8 @@
+//Load logo
+window.addEventListener('load', () => {
+  document.querySelector('.logoBig').classList.add('show');
+});
+
 //Take images in image folder and create img elements to display in masonry grid like format
 let pictures = document.getElementById("pictures");
 for (let i = 1; i <= 93; i++) {

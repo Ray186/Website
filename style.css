@@ -82,6 +82,15 @@ body {
   margin-top:30px;
   width:50%;
 }
+.logoBig{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all .5s ease-out;
+}
+.logoBig.show{
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .content .buttons a{
   font-family: "Urbanist", sans-serif;
@@ -96,7 +105,6 @@ body {
   gap:60px;
 }
 
-
 .content h1{
   font-size:4rem;
   font-weight: bold;
@@ -105,10 +113,10 @@ body {
 
 .content p{
   font-weight: 500;
-  margin: 0;
+
 }
 .aboutText{
-  margin-top:60px;
+  margin-bottom:60px;
 }
 
 .posts {
@@ -132,8 +140,9 @@ body {
 #pictures .card {
   box-shadow: none;
   border: none;
-  margin-bottom: 5px; /* optional spacing */
+  margin-bottom: 5px; 
 }
+
 
 
 /* Hide lightbox by default */
@@ -145,7 +154,7 @@ body {
 #lightbox {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,6 +175,80 @@ body {
   font-size: 3rem;
   color: white;
   cursor: pointer;
-  user-select: none;
+  font-weight: bold;
+}
+
+
+/*Footer Contact*/
+.contact-bar {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #28262C;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+/*About Me Format */
+.siteInfo img {
+  width:60%;
+  margin-bottom:40px;
+}
+.siteInfo p {
+  font-size:2.5rem;
+  margin-bottom:40px;
+}
+.colorTitle {
+  margin-bottom:10px !important;
+}
+.color-palette {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.color-card {
+  width: 140px;
+  border: 2px solid #c7c7c7;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.color-block {
+  height: 100px;
+}
+
+.color-hex {
+  padding: 5px ;
+  background: white;
   font-weight: bold;
 }
