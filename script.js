@@ -27,8 +27,8 @@ document.querySelectorAll('.clickable-img').forEach(img => {
   img.addEventListener('click', () => {
     lightboxImg.src = img.src;
     lightbox.classList.remove('hidden');
-  });
-});
+  })
+})
 
 // Close lightbox on close button click
 closeBtn.addEventListener('click', () => {
